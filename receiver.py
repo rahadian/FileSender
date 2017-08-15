@@ -6,7 +6,7 @@ server_port=raw_input("Enter the Server Port: ")
 server_port=int(server_port)
 print >> sys.stderr,'Building up server %s on port %s' %(server_address,server_port)
 server=(server_address,server_port)
-f = open('datasensor.txt','wb')
+f = open('datasensor.txt','wb')#you can change it
 s.bind(server)
 s.listen(5)
 while True:
@@ -23,9 +23,10 @@ while True:
 	print >> sys.stderr,'Data Received Successfully'
 	conn.close()
 	print "Renamed ..."
-	z = open('datasensor.txt','r')
+	z = open('datasensor.txt','r')#you can change it
+	#
 	x = mmap.mmap(z.fileno(), 0, access=mmap.ACCESS_READ)
-	#for line in z:
+	#scaning and detecting text in file per line.
      	if x.find("sensor kelembapan")!=-1:
         	print "Sensor kelembapan"
 		os.rename("datasensor.txt","sensortest1.txt")
