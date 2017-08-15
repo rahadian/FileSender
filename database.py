@@ -5,9 +5,9 @@ import pandas
 import datetime as dt
 from sqlalchemy import *
 time.ctime()
-db = create_engine('mysql://root:toor@localhost/client')
+db = create_engine('mysql://root:toor@localhost/client')#database address, you can change it
 meta = MetaData(db)
-table1 = Table('DataSensor1', meta,
+table1 = Table('DataSensor1', meta, #table name, you can change it
    Column('id',Integer,primary_key=True),
    Column('Jenis_sensor', String(50)),
    Column('Tipe_sensor', String(50)),
@@ -34,7 +34,7 @@ table3 = Table('DataSensor3', meta,
 #     tbl_reader = csv.reader(csvfile, delimiter=',')
 #     for row in tbl_reader:
 #       table.insert().values(id=row[0], Tanggal=row[1], Tipe_sensor=row[2], Value=row[3], Ket=row[4])
-file_name1 = Path('sensortest1.txt')
+file_name1 = Path('sensortest1.txt')#file path and filename, you can change it
 file_name2 = Path('sensortest2.txt')
 file_name3 = Path('sensortest3.txt')
 i=1
