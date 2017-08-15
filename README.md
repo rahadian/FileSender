@@ -5,7 +5,7 @@ a. sender.py -> Program for sending data, you can edit the address to connect wi
 
 b. receiver.py -> Program for receiving data, you can edit the address to connect with sender.py.
 
-c. database.py -> Program for implementing data from receiver.py to database. You can edit the database address, tables and coloumns name. 
+c. database.py -> Program for implementing data from receiver.py to database. You can edit the database address, tables and coloumns name. It runs as monitoring program.
 
 You can adjust these programs based what you want and you can develop these.
 
