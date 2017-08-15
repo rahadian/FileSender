@@ -30,10 +30,6 @@ table3 = Table('DataSensor3', meta,
    Column('Ket', String(50)))
 
 ##table3.create()
-#with open('sensortest.txt') as csvfile:
-#     tbl_reader = csv.reader(csvfile, delimiter=',')
-#     for row in tbl_reader:
-#       table.insert().values(id=row[0], Tanggal=row[1], Tipe_sensor=row[2], Value=row[3], Ket=row[4])
 file_name1 = Path('sensortest1.txt')#file path and filename, you can change it
 file_name2 = Path('sensortest2.txt')
 file_name3 = Path('sensortest3.txt')
